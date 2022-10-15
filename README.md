@@ -31,7 +31,7 @@ Static version of Bean & Brew
 
 ### Isues
 
-See the [open issues](https://github.com/sam-ward42/Bean-Brew/issues).
+See the [open issues](https://github.com/blindninja616/bean-and-brew-demo/issues).
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
