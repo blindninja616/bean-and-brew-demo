@@ -1,0 +1,76 @@
+$primary: #6F4E37;
+$danger: #ff4136;
+
+// Bootstrap
+@import "../lib/bootstrap-5.2.0/scss/bootstrap.scss";
+
+html > body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    > main {
+        flex: 1;
+    }
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: darken(white, 5%);
+    color: black;
+    text-align: center;
+}
+
+.imageHeader {
+    background-image: url("../assets/coffee-header.jpg");
+    background-attachment: fixed;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 20rem;
+    @include media-breakpoint-down(lg) {
+        height: 15rem;
+    }
+    @include media-breakpoint-down(md) {
+        height: 10rem;
+    }
+    @include media-breakpoint-down(sm) {
+        height: 8rem;
+    }
+}
+
+.navbar {
+    background-color: rgba(67, 47, 33, .61);
+
+    #logo {
+        height: 100px;
+        @include media-breakpoint-down(md) {
+            height: 50px
+        }
+        transition: ease .2s;
+    }
+
+    .nav-item {
+        a:hover:not(.dropdown-item) {
+            color: darken(white, 10%);
+        }
+        margin-inline: .5rem;
+    }
+}
+
+.footer {
+    color: whitesmoke;
+    .nav-link {
+        color: whitesmoke;
+    
+        &:hover {
+            background-color: darken(white, 5%);
+            color: black !important;
+        }
+    }
+}
+
+.splide__slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

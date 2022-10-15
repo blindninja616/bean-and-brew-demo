@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--Bootstrap-->
+    <script src="lib/bootstrap-5.2.0/dist/js/bootstrap.min.js"></script>
+    <!--Splide-->
+    <script src="lib/splide-4.1.3/dist/js/splide.min.js"></script>
+    <link rel="stylesheet" href="lib/splide-4.1.3/dist/css/splide.min.css">
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <!--CSS-->
+    <link rel="stylesheet" href="css/main.css">
+    <!--Tags-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bean and Brew</title>
+
+    <script>
+        // When the user scrolls down 80px from the top of the document, resize the logo's height
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+            document.getElementById("logo").style.height = "50px";
+        } else {
+            document.getElementById("logo").style.height = "100px";
+        }
+        } 
+    </script>
+
+    <script>
+        document.addEventListener( 'DOMContentLoaded', function() {
+          var splide = new Splide( '.splide', {
+            heightRatio: 0.5,
+          } );
+          splide.mount();
+        } );
+    </script>
+
+</head>
+
+<body>
+
+    <header>
+        <div class="imageHeader">
+            <nav class="navbar navbar-dark navbar-expand-lg fixed-top">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="assets/logo.png" alt="Bean and Brew logo" id="logo" class="me-1">
+                        Bean and Brew
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 justify-content-end">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Shops</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Order Online</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Lessons</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Restaurants</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="container col-xxl-8 px-4">
+            <div class="row flex-lg-row-reverse align-items-center g-5 pt-5">
+              <div class="col-10 col-sm-8 col-lg-6 mx-auto">
+                <img src="assets/coffee-square.jpg" class="d-block mx-lg-auto img-fluid rounded" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+              </div>
+              <div class="col-lg-6">
+                <h1 class="display-5 fw-bold lh-1 mb-3">Try Our New Special Blend!</h1>
+                <p class="lead">Lorem ipsum dolor sit amet. Eum laborum consequatur quo soluta libero qui provident corporis! Ut fugit et dolorem nostrum 33 natus explicabo. Sed minima officiis sed tempore itaque vel tempore debitis ut quis autem 33 facere consequatur?</p>
+                <div class="mx-auto">
+                  <button type="button" class="btn btn-outline-primary btn-lg px-4">Check it out</button>
+                </div>
+              </div>
+            </div>
+        </section>
+            
+        <section class="splide mt-5 mx-auto" aria-labelledby="carousel-heading" data-splide='{"type":"loop","perPage":1,"width":1200,"autoheight":true,"autoplay":true}'>
+            <div class="splide__track">
+                  <ul class="splide__list">
+                      <li class="splide__slide"><img src="assets/coffee-table.jpg" class="img-fluid"></li>
+                      <li class="splide__slide"><img src="assets/pouring.jpg" class="img-fluid"></li>
+                      <li class="splide__slide"><img src="assets/cafe.jpg" class="img-fluid"></li>
+                  </ul>
+            </div>
+        </section>
+        
+    </main>
+    
+    <footer>
+        <div class="footer container-fluid bg-primary py-2 px-2 mt-5">
+            <ul class="nav justify-content-center border-bottom pb-2 mb-2">
+                <li class="nav-item"><a href="#" class="nav-link px-2">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2">Shops</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2">Order Online</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2">Lessons</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2">Restaurants</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2">Contacts</a></li>
+            </ul>
+            <p class="text-center">© 2022 Bean and Brew, Inc</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
