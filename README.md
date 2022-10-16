@@ -29,7 +29,7 @@ Static version of Bean & Brew
 - _(source: [unsplash](https://unsplash.com/photos/_hnL_961xTk))_
 - _(logo from: [Canva](https://www.canva.com/policies/content-license-agreement/))_
 
-### Isues
+### Issues
 
 See the [open issues](https://github.com/blindninja616/bean-and-brew-demo/issues).
 
